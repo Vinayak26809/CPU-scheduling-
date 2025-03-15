@@ -1,0 +1,44 @@
+CPU Scheduling in Operating Systems:
+CPU scheduling is a process used by the operating system to decide which task or process gets to use the CPU at a particular time.
+This is important because a CPU can only handle one task at a time, but there are usually many tasks that need to be processed. 
+The following are different purposes of a CPU scheduling time.
+
+1) Maximize the CPU utilization
+2) Minimize the response and waiting time of the process.
+
+
+What is the Need for a CPU Scheduling Algorithm?
+CPU scheduling is the process of deciding which process will own the CPU to use while another process is suspended. The main function of CPU scheduling is to ensure that whenever the CPU remains idle, the OS has at least selected one of the processes available in the ready-to-use line.
+
+In Multiprogramming, if the long-term scheduler selects multiple I/O binding processes then most of the time, the CPU remains idle. The function of an effective program is to improve resource utilization.
+
+
+Terminologies Used in CPU Scheduling
+Arrival Time: The time at which the process arrives in the ready queue.
+Completion Time: The time at which the process completes its execution.
+Burst Time: Time required by a process for CPU execution.
+Turn Around Time: Time Difference between completion time and arrival time.
+
+1. Turn Around Time = Completion Time  –  Arrival Time
+
+Waiting Time(W.T): Time Difference between turn around time and burst time.
+
+2. Waiting Time = Turn Around Time  –  Burst Time
+
+
+
+Things to Take Care While Designing a CPU Scheduling Algorithm
+Different CPU Scheduling algorithms have different structures and the choice of a particular algorithm depends on a variety of factors. 
+
+CPU Utilization: The main purpose of any CPU algorithm is to keep the CPU as busy as possible. Theoretically, CPU usage can range from 0 to 100 but in a real-time system, it varies from 40 to 90 percent depending on the system load.
+Throughput: The average CPU performance is the number of processes performed and completed during each unit. This is called throughput. The output may vary depending on the length or duration of the processes.
+Turn Round Time: For a particular process, the important conditions are how long it takes to perform that process. The time elapsed from the time of process delivery to the time of completion is known as the conversion time. Conversion time is the amount of time spent waiting for memory access, waiting in line, using CPU, and waiting for I / O.
+Waiting Time: The Scheduling algorithm does not affect the time required to complete the process once it has started performing. It only affects the waiting time of the process i.e. the time spent in the waiting process in the ready queue.
+Response Time: In a collaborative system, turn around time is not the best option. The process may produce something early and continue to computing the new results while the previous results are released to the user. Therefore another method is the time taken in the submission of the application process until the first response is issued. This measure is called response time.
+Different Types of CPU Scheduling Algorithms
+There are mainly two types of scheduling methods:
+
+Preemptive Scheduling: Preemptive scheduling is used when a process switches from running state to ready state or from the waiting state to the ready state.
+Non-Preemptive Scheduling: Non-Preemptive scheduling is used when a process terminates , or when a process switches from running state to waiting state.
+
+
