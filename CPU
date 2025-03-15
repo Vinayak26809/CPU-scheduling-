@@ -1,0 +1,83 @@
+CPU Scheduling Algorithms in Operating Systems
+In this tutorial, we will be learning about the CPU Scheduling Algorithms in Operating Systems. These are algorithms are very important topic in Operating Systems. This is because this CPU Scheduling Algorithms forms a base and foundation for the Operating Systems subject.
+
+There are many processes which are going on in the Operating System. A task is a group of processes. Every task is executed by the Operating System. The Operating System divides the task into many processes. The final goal of the Operating System is completion of the task.
+
+But there are some certain conditions which must be followed by the task. The conditions are that the Task must be finished in the quickest possible time with the limited resources which the Operating System have. This is the main motive of CPU Scheduling Algorithms.
+
+ADVERTISEMENT
+
+CPU Scheduling
+The CPU Scheduling is the process by which a process is executed by the using the resources of the CPU. The process also can wait due to the absence or unavailability of the resources. These processes make the complete use of Central Processing Unit.
+
+The operating system must choose one of the processes in the list of ready-to-launch processes whenever the CPU gets idle. A temporary (CPU) scheduler does the selection. The Scheduler choose one of the ready-to-start memory processes to get the CPU.
+
+Before, going to the Types of CPU Scheduling Algorithms, we are going to learn about the Basic Terminologies which are to be followed and used in the CPU Scheduling Algorithms by us.
+
+1. Process ID
+The Process ID is the first Thing is to be written while solving the problem. The Process ID acts like the name of the process. It is usually represented with numbers or P letter with numbers
+
+Example:
+
+0, 1, 2, 3, . . . . . . . . . .  
+P0, P1, P2, P3 . . . . . . . .  
+Usually, we start the naming of the process from zero. We can also start the numbering from number 1 also. It is our interest
+
+1. Arrival Time
+
+The time which is required for the Process to enter the ready queue or the time when the Process is ready to be executed by the CPU. This Arrival Time can be represented as AT in short form. The Arrival Times is always positive or also zero.
+
+2. Burst Time
+
+The Time Slot which the Process requires to complete the Process is known as the Burst Time. The Burst Time can be represented as BT in short form. The Burst Times of a process is always greater than zero.
+
+3. Completion Time
+
+The Total Time required by the CPU to complete the process is known as Completion Time. The Completion Time can be represented as CT in short form. The Completion will always be greater than zero.
+
+4. Turn Around Time
+
+The time taken by the CPU since the Process has been ready to execute or since the process is in Ready Queue is known as Turn Around Time. The Turn Around Time can be calculated with the help of Completion Time and Arrival Time. The Turn Around Time can be represented as TAT in short form.
+
+The Turn Around Time is the difference of Completion Time and Arrival Time.
+
+Formula
+
+TAT = CT - AT  
+Here, CT is Completion Time and AT is Arrival Time.
+
+5. Waiting Time
+
+The time the Process has been waiting to complete its process since the assignment of process for completion is known as Waiting Time. The Waiting Time can be represented as WT in short form. The Waiting Time can be calculated with the help of Turn Around Time and Burst Time.
+
+The Waiting Time is the difference between Turn Around Time and Burst Time
+
+Formula
+
+WT = TAT - BT  
+6. Ready Queue
+
+The Queue where all the processes are stored until the execution of the previous process. This ready queue is very important because there would be confusion in CPU when two same kinds of processes are being executed at the same time.
+
+Then, in these kinds of conditions the ready queue comes into place and then, the its duty is fulfilled.
+
+7. Gantt Chart
+
+It is the place where all the already executed processes are stored. This is very useful for calculating Waiting Time, Completion Time, Turn Around Time.
+
+Modes in CPU Scheduling Algorithms
+There are two modes in CPU Scheduling Algorithms. They are:
+
+Pre-emptive Approach
+Non Pre-emptive Approach
+In Pre Emptive-Approach the process once starts its execution then the CPU is allotted to the same process until the completion of process. There would be no shift of Processes by the Central Processing Unit. The complete CPU is allocated to the Process and there would be no change of CPU allocation until the process is complete.
+
+In Non-Pre Emptive-Approach the process once stars its execution, then the CPU is not allotted to the same process until the completion of process. There is a shift of Processes by the Central Processing Unit. The complete CPU is allocated to the Process when only certain required conditions are achieved and there will be change of CPU allocation if there is break or False occurrence in the required conditions.
+
+ADVERTISEMENT
+
+Types of CPU Scheduling Algorithms
+First Come First Serve
+Shortest Job First
+Priority Scheduling
+Round Robin Scheduling
