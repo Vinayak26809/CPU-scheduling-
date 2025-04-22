@@ -1,7 +1,7 @@
 // CPU-Scheduling-Algorithm-In-C
 // Shortest Job First scheduling (SJF) (Non - Preemptive)  
 
-#include<stdio.h>
+#include<stdio.h>   
 
 
 /* in this we have two choice one is use the array for a process 
